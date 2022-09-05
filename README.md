@@ -21,7 +21,7 @@ fileExtension = [".xml",".java",".kt"]
 dicts={}
 ```
 
-Read the csv file
+## Read the csv file
 Read the csv file of the support library class and androidx class
 
 ```
@@ -36,6 +36,7 @@ Support Library class	Android X class
 3	android.arch.core.executor.JunitTaskExecutorRule	androidx.arch.core.executor.JunitTaskExecutorRule
 4	android.arch.core.executor.TaskExecutor	androidx.arch.core.executor.TaskExecutor
  
+#
 Put the directory path and the files's name with extension .xml and .java and .kt in dictionnary to access them in the next step.
 ```
 dicts={'path1':['file1', 'file2', 'file3', ...],
@@ -54,7 +55,7 @@ if __name__ == "__main__":
             dicts[root] = list_files
 ```
 
-Replace and overwrite the changes with loops
+## Replace and overwrite the changes with loops
 Replace the old packages with the androidx packages in file from our dictionnary using loop, and overwrite the same file with the replaced text so the changes will be saved.
 
 ```
